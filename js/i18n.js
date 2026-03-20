@@ -192,7 +192,7 @@ window.TRANSLATIONS = {
     'contact.direct':   'Direct Contact',
     'contact.follow':   'Follow Along',
     'contact.location': 'Location',
-    'contact.loc_text': 'Based in Istanbul, Turkey<br>Available worldwide for collaborations',
+    'contact.loc_text': 'Based in GERMANYIstanbul, Turkey<br>Available worldwide for collaborations',
     'contact.ph_name':  'Your full name',
     'contact.ph_email': 'you@example.com',
     'contact.ph_msg':   'Tell me what\u2019s on your mind...',
