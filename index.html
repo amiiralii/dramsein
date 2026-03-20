@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dentist, lifestyle creator, and visual storyteller based in Istanbul — blending discipline, aesthetics, and real-life growth into meaningful content.">
+  <title>Amsein — Dentist · Creator · Storyteller</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🦷%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=Vazirmatn:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header" id="site-header">
+    <nav class="nav">
+      <a href="#hero" class="nav-logo">Dr. Amsein</a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link" data-i18n="nav.about">About</a></li>
+        <li><a href="#dentistry" class="nav-link" data-i18n="nav.dentistry">Dentistry</a></li>
+        <li><a href="#lifestyle" class="nav-link" data-i18n="nav.lifestyle">Lifestyle</a></li>
+        <li><a href="#immigration" class="nav-link" data-i18n="nav.immigration">Immigration</a></li>
+        <li><a href="#collaboration" class="nav-link" data-i18n="nav.collaborate">Collaborate</a></li>
+        <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+        <li class="nav-lang-mobile">
+          <button class="lang-opt-m active" data-lang="en">EN</button>
+          <button class="lang-opt-m" data-lang="fa">FA</button>
+          <button class="lang-opt-m" data-lang="tr">TR</button>
+        </li>
+      </ul>
+
+      <div class="lang-switcher" id="lang-switcher">
+        <button class="lang-current" id="lang-current" aria-label="Change language">
+          <span>EN</span>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="lang-dropdown" id="lang-dropdown">
+          <button class="lang-option active" data-lang="en">English</button>
+          <button class="lang-option" data-lang="fa">فارسی</button>
+          <button class="lang-option" data-lang="tr">Türkçe</button>
+        </div>
+      </div>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow" data-i18n="hero.eyebrow">Dentist · Creator · Storyteller</p>
+          <h1 data-i18n-html="hero.title">Where Precision Meets Creative <span class="text-outline">Expression</span></h1>
+          <p class="hero-subtitle" data-i18n="hero.subtitle">
+            I'm Dr. Amirhossein Heidari — a dentist, lifestyle creator, and storyteller based in Istanbul.
+            I share the intersection of discipline, aesthetics, and growth — from the clinic to real life.
+          </p>
+          <div class="hero-actions">
+            <a href="#about" class="btn btn--primary" data-i18n="hero.cta1">Explore My Story</a>
+            <a href="#contact" class="btn btn--ghost" data-i18n="hero.cta2">Get in Touch</a>
+          </div>
+        </div>
+        <div class="hero-portrait">
+          <img src="assets/images/portrait.jpeg" alt="Dr. Amirhossein Heidari" class="portrait-img">
+        </div>
+      </div>
+      <div class="container">
+        <div class="hero-stats stagger">
+          <div class="hero-stat">
+            <span class="hero-stat-number">8+</span>
+            <span class="hero-stat-label" data-i18n="hero.stat1">Years in Dentistry</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-number">110K+</span>
+            <span class="hero-stat-label" data-i18n="hero.stat2">Community</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-number">3</span>
+            <span class="hero-stat-label" data-i18n="hero.stat3">Countries Lived In</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span class="marquee-content" data-i18n-html="marquee">Dentist&ensp;·&ensp;Creator&ensp;·&ensp;Storyteller&ensp;·&ensp;Discipline&ensp;·&ensp;Aesthetics&ensp;·&ensp;Growth&ensp;·&ensp;Precision&ensp;·&ensp;Vision&ensp;·&ensp;Lifestyle&ensp;·&ensp;</span>
+        <span class="marquee-content" data-i18n-html="marquee">Dentist&ensp;·&ensp;Creator&ensp;·&ensp;Storyteller&ensp;·&ensp;Discipline&ensp;·&ensp;Aesthetics&ensp;·&ensp;Growth&ensp;·&ensp;Precision&ensp;·&ensp;Vision&ensp;·&ensp;Lifestyle&ensp;·&ensp;</span>
+      </div>
+    </div>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section-header">
+          <p class="eyebrow" data-i18n="about.eyebrow">My Story</p>
+          <h2 data-i18n="about.title">Two Worlds. One Vision.</h2>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p data-i18n="about.p1">
+              I've always been drawn to two worlds that rarely meet: precision and expression. Dentistry gave me structure, discipline, and the ability to impact people's confidence in a real, tangible way.
+            </p>
+            <p data-i18n="about.p2">
+              But beyond the clinic, I was building something else — a lifestyle rooted in growth, aesthetics, and storytelling. From early mornings in the gym to late nights refining my craft, I started documenting the process, not just the results.
+            </p>
+            <p data-i18n="about.p3">
+              Today, I exist at the intersection of both worlds. I create content that reflects real life — the discipline behind success, the mindset behind change, and the identity you build when you step outside your comfort zone.
+            </p>
+          </div>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <span class="timeline-year">2015</span>
+              <div class="timeline-body">
+                <h3 data-i18n="about.tl1_t">Dental School</h3>
+                <p data-i18n="about.tl1_p">Began clinical training, driven by a passion for precision and patient care.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-year">2018</span>
+              <div class="timeline-body">
+                <h3 data-i18n="about.tl2_t">Moved to Istanbul</h3>
+                <p data-i18n="about.tl2_p">Left everything behind for a new chapter — new country, new language, new beginning.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-year">2020</span>
+              <div class="timeline-body">
+                <h3 data-i18n="about.tl3_t">Started Creating</h3>
+                <p data-i18n="about.tl3_p">Began documenting the intersection of dentistry, lifestyle, and immigration.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-year">2022</span>
+              <div class="timeline-body">
+                <h3 data-i18n="about.tl4_t">First Partnerships</h3>
+                <p data-i18n="about.tl4_p">Turned content into a meaningful platform with aligned brand collaborations.</p>
+              </div>
+            </div>
+            <div class="timeline-item active">
+              <span class="timeline-year" data-i18n="about.tl5_y">Now</span>
+              <div class="timeline-body">
+                <h3 data-i18n="about.tl5_t">Building Forward</h3>
+                <p data-i18n="about.tl5_p">Growing a global community — one story, one frame, one idea at a time.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <blockquote class="pull-quote">
+          <p data-i18n="about.quote">"Discipline is the common language between who you are and who you're becoming."</p>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- Dentistry -->
+    <section class="section" id="dentistry">
+      <div class="container">
+        <header class="section-header">
+          <p class="eyebrow" data-i18n="dent.eyebrow">Dentistry</p>
+          <h2 data-i18n="dent.title">Clinical Care, Real Impact</h2>
+          <p class="section-subtitle" data-i18n="dent.subtitle">
+            Dentistry, to me, is not just clinical — it's personal. Every smile carries a story, and my role is to help people feel confident enough to share it.
+          </p>
+        </header>
+
+        <div class="values-grid stagger">
+          <div class="value-block" data-num="01">
+            <h3 data-i18n="dent.v1_t">Patient-First Approach</h3>
+            <p data-i18n="dent.v1_p">I don't treat cases — I treat people. Every patient comes with a story, and understanding that is where real care begins.</p>
+          </div>
+          <div class="value-block" data-num="02">
+            <h3 data-i18n="dent.v2_t">Confidence Through Care</h3>
+            <p data-i18n="dent.v2_p">A confident smile changes posture, presence, and energy. My work is about more than teeth — it's about how people show up in the world.</p>
+          </div>
+          <div class="value-block" data-num="03">
+            <h3 data-i18n="dent.v3_t">Education & Mentoring</h3>
+            <p data-i18n="dent.v3_p">I believe knowledge should be shared. Through mentorship and content, I aim to make dentistry more approachable and inspiring for the next generation.</p>
+          </div>
+        </div>
+
+        <div class="services-section">
+          <h3 class="sub-heading" data-i18n="dent.svc">Areas of Practice</h3>
+          <div class="services-grid stagger">
+            <div class="service-item">
+              <span class="service-number">01</span>
+              <h4 data-i18n="dent.s1_t">Restorative Dentistry</h4>
+              <p data-i18n="dent.s1_p">Fillings, crowns, bridges, and full-mouth rehabilitation — restoring function and aesthetics with precision.</p>
+            </div>
+            <div class="service-item">
+              <span class="service-number">02</span>
+              <h4 data-i18n="dent.s2_t">Cosmetic Dentistry</h4>
+              <p data-i18n="dent.s2_p">Veneers, whitening, and smile design — helping patients achieve the smile they've always wanted.</p>
+            </div>
+            <div class="service-item">
+              <span class="service-number">03</span>
+              <h4 data-i18n="dent.s3_t">Preventive Care</h4>
+              <p data-i18n="dent.s3_p">Cleanings, screenings, and patient education — building healthy habits that last a lifetime.</p>
+            </div>
+            <div class="service-item">
+              <span class="service-number">04</span>
+              <h4 data-i18n="dent.s4_t">Oral Surgery</h4>
+              <p data-i18n="dent.s4_p">Extractions and minor surgical procedures performed with care, comfort, and clinical excellence.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonials-section">
+          <h3 class="sub-heading" data-i18n="dent.test">What Patients Say</h3>
+          <div class="testimonials-grid stagger">
+            <blockquote class="testimonial">
+              <p data-i18n="dent.t1_p">"He made me feel completely at ease. For the first time, I actually looked forward to a dental visit."</p>
+              <cite data-i18n="dent.t1_c">Sara M.</cite>
+            </blockquote>
+            <blockquote class="testimonial">
+              <p data-i18n="dent.t2_p">"Professional, attentive, and genuinely caring. He explained every step and made sure I was comfortable throughout."</p>
+              <cite data-i18n="dent.t2_c">Emre K.</cite>
+            </blockquote>
+            <blockquote class="testimonial">
+              <p data-i18n="dent.t3_p">"My smile has never looked better. Real expertise combined with a personal touch that's hard to find."</p>
+              <cite data-i18n="dent.t3_c">Deniz A.</cite>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lifestyle — Bento grid -->
+    <section class="section" id="lifestyle">
+      <div class="container">
+        <header class="section-header">
+          <p class="eyebrow" data-i18n="life.eyebrow">Lifestyle</p>
+          <h2 data-i18n="life.title">Discipline Beyond the Clinic</h2>
+          <p class="section-subtitle" data-i18n="life.subtitle">
+            What you do outside your profession defines how far you go inside it.
+          </p>
+        </header>
+
+        <div class="bento">
+          <article class="bento-item bento-featured">
+            <div class="bento-bg" style="background:url('assets/images/gym.jpeg') center/cover no-repeat"></div>
+            <div class="bento-overlay">
+              <p class="eyebrow" data-i18n="life.b1_ey">Fitness</p>
+              <h3 data-i18n="life.b1_t">Mindset in Motion</h3>
+              <p data-i18n="life.b1_p">The gym is where I build the mindset that carries into everything else — discipline, consistency, and resilience. It's not about perfection, it's about showing up.</p>
+            </div>
+          </article>
+          <article class="bento-item bento-visual">
+            <div class="bento-bg" style="background:url('assets/images/outfit.jpeg') center/cover no-repeat"></div>
+            <div class="bento-overlay">
+              <p class="eyebrow" data-i18n="life.b2_ey">Style</p>
+              <h3 data-i18n="life.b2_t">Intentional Identity</h3>
+            </div>
+          </article>
+          <article class="bento-item bento-visual">
+            <div class="bento-bg" style="background:url('assets/images/routine.jpeg') center/cover no-repeat"></div>
+            <div class="bento-overlay">
+              <p class="eyebrow" data-i18n="life.b3_ey">Growth</p>
+              <h3 data-i18n="life.b3_t">The Invisible Work</h3>
+            </div>
+          </article>
+          <article class="bento-item bento-text-card">
+            <p class="eyebrow" data-i18n="life.b4_ey">Fitness</p>
+            <h4 data-i18n="life.b4_t">Consistency Over Perfection</h4>
+            <p data-i18n="life.b4_p">Early mornings, heavy lifts, structured recovery. The routine is the foundation — everything else is built on top of it.</p>
+          </article>
+          <article class="bento-item bento-text-card">
+            <p class="eyebrow" data-i18n="life.b5_ey">Style</p>
+            <h4 data-i18n="life.b5_t">Identity Without Words</h4>
+            <p data-i18n="life.b5_p">Style, for me, is intentional. It's how I express identity without saying a word — clean, minimal, and aligned with who I am.</p>
+          </article>
+          <article class="bento-item bento-text-card">
+            <p class="eyebrow" data-i18n="life.b6_ey">Growth</p>
+            <h4 data-i18n="life.b6_t">Quiet Progress</h4>
+            <p data-i18n="life.b6_p">Growth isn't always visible. It's in the routines, the setbacks, and the quiet decisions no one sees.</p>
+          </article>
+        </div>
+
+        <!-- Instagram story cards — replace href with Instagram post URLs, src with local images -->
+        <div class="ig-stories">
+          <h3 class="sub-heading" data-i18n="life.ig_heading">From the Feed</h3>
+          <div class="ig-grid stagger">
+            <a href="https://www.instagram.com/p/DFnIydsKS3X/?igsh=aGxmcXRoM3JwbDBo" target="_blank" rel="noopener" class="ig-card">
+              <div class="ig-card-img">
+                <img src="assets/images/clinic.jpg" alt="" loading="lazy">
+              </div>
+              <div class="ig-card-body">
+                <h4 data-i18n="life.ig1_t">Between Clinic and Training</h4>
+                <p data-i18n="life.ig1_p">Small rituals that shape consistency.</p>
+              </div>
+              <span class="ig-card-cta">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                <span data-i18n="life.ig_cta">View on Instagram</span>
+              </span>
+            </a>
+            <a href="https://www.instagram.com/reel/DPRfCBHDMXV/?igsh=MTFyN2RodXVzcW93cg==" target="_blank" rel="noopener" class="ig-card">
+              <div class="ig-card-img">
+                <img src="assets/images/style.jpeg" alt="" loading="lazy">
+              </div>
+              <div class="ig-card-body">
+                <h4 data-i18n="life.ig2_t">Style in the Details</h4>
+                <p data-i18n="life.ig2_p">Intentional choices, every single day.</p>
+              </div>
+              <span class="ig-card-cta">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                <span data-i18n="life.ig_cta">View on Instagram</span>
+              </span>
+            </a>
+            <a href="https://www.instagram.com/p/DGIjxpzK5cO/?igsh=eDdrejNyYXJncnl1" target="_blank" rel="noopener" class="ig-card">
+              <div class="ig-card-img">
+                <img src="assets/images/lifestyle.jpeg" alt="" loading="lazy">
+              </div>
+              <div class="ig-card-body">
+                <h4 data-i18n="life.ig3_t">Process Over Outcome</h4>
+                <p data-i18n="life.ig3_p">Discipline starts before the camera rolls.</p>
+              </div>
+              <span class="ig-card-cta">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                <span data-i18n="life.ig_cta">View on Instagram</span>
+              </span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Immigration — Dark -->
+    <section class="section section--dark" id="immigration">
+      <div class="container">
+        <div class="story-grid">
+          <div class="story-content">
+            <p class="eyebrow" data-i18n="imm.eyebrow">Immigration</p>
+            <h2 data-i18n="imm.title">The Journey Between Borders</h2>
+            <p class="section-subtitle" data-i18n="imm.subtitle">
+              Immigration shaped who I am. I share this journey not because it's perfect, but because it's real.
+            </p>
+            <div class="story-text">
+              <p data-i18n="imm.p1">
+                Moving abroad wasn't just a career decision — it was a complete reset. New language, new systems, new identity. Everything familiar was gone, and I had to rebuild from zero.
+              </p>
+              <p data-i18n="imm.p2">
+                That experience shaped how I see the world. It taught me resilience, adaptability, and the importance of creating your own path — even when it's unclear. I share this journey because sometimes, that's exactly what people need to see.
+              </p>
+            </div>
+          </div>
+          <div class="story-image">
+            <img src="assets/images/outfit2.jpeg" alt="Immigration Journey" loading="lazy" class="story-img">
+          </div>
+        </div>
+
+        <div class="lessons-section">
+          <h3 class="sub-heading" data-i18n="imm.les">Key Lessons</h3>
+          <div class="lessons-grid stagger">
+            <div class="lesson">
+              <span class="lesson-num">01</span>
+              <h4 data-i18n="imm.l1_t">Embrace the Discomfort</h4>
+              <p data-i18n="imm.l1_p">If it feels uncomfortable, you're probably growing.</p>
+            </div>
+            <div class="lesson">
+              <span class="lesson-num">02</span>
+              <h4 data-i18n="imm.l2_t">Build Your Own Circle</h4>
+              <p data-i18n="imm.l2_p">You won't find your old life — you'll build a new one.</p>
+            </div>
+            <div class="lesson">
+              <span class="lesson-num">03</span>
+              <h4 data-i18n="imm.l3_t">Your Story Is Your Advantage</h4>
+              <p data-i18n="imm.l3_p">Being different isn't a weakness — it's your edge.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Instagram story cards — replace href with Instagram post URLs, src with local images -->
+        <div class="ig-stories">
+          <h3 class="sub-heading" data-i18n="imm.ig_heading">Moments from the Journey</h3>
+          <div class="ig-grid stagger">
+            <a href="https://www.instagram.com/reel/DDwxH3eqT17/?igsh=dWlpaDNvcGtsbjhh" target="_blank" rel="noopener" class="ig-card">
+              <div class="ig-card-img">
+                <img src="assets/images/trust.jpeg" alt="" loading="lazy">
+              </div>
+              <div class="ig-card-body">
+                <h4 data-i18n="imm.ig1_t">Starting Over in a New City</h4>
+                <p data-i18n="imm.ig1_p">What rebuilding looks like from day one.</p>
+              </div>
+              <span class="ig-card-cta">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                <span data-i18n="imm.ig_cta">View on Instagram</span>
+              </span>
+            </a>
+            <a href="https://www.instagram.com/reel/DDr8g2UKoAt/?igsh=MWVrMXB0Y2Nubmc5Zg==" target="_blank" rel="noopener" class="ig-card">
+              <div class="ig-card-img">
+                <img src="assets/images/toilet.jpeg" alt="" loading="lazy">
+              </div>
+              <div class="ig-card-body">
+                <h4 data-i18n="imm.ig2_t">Finding Home Far From Home</h4>
+                <p data-i18n="imm.ig2_p">Building roots in unfamiliar ground.</p>
+              </div>
+              <span class="ig-card-cta">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                <span data-i18n="imm.ig_cta">View on Instagram</span>
+              </span>
+            </a>
+            <a href="https://www.instagram.com/reel/DMTClkWKG77/?igsh=MTN0ajR0dTBsMXJ0OQ==" target="_blank" rel="noopener" class="ig-card">
+              <div class="ig-card-img">
+                <img src="assets/images/tehran.jpeg" alt="" loading="lazy">
+              </div>
+              <div class="ig-card-body">
+                <h4 data-i18n="imm.ig3_t">The Quiet Side of Growth</h4>
+                <p data-i18n="imm.ig3_p">What they don't show you about starting fresh.</p>
+              </div>
+              <span class="ig-card-cta">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                <span data-i18n="imm.ig_cta">View on Instagram</span>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <div class="resources-section">
+          <h3 class="sub-heading" data-i18n="imm.res">Featured Resources</h3>
+          <div class="resources-grid stagger">
+            <a href="#" class="resource-link">
+              <span class="resource-type" data-i18n="imm.r1_ty">Video</span>
+              <h4 data-i18n="imm.r1_t">Relocating Your Career Abroad — The Real Story</h4>
+              <p data-i18n="imm.r1_p">The unfiltered experience of starting over in a new country as a dentist.</p>
+            </a>
+            <a href="#" class="resource-link">
+              <span class="resource-type" data-i18n="imm.r2_ty">Guide</span>
+              <h4 data-i18n="imm.r2_t">Credential Recognition for Dentists</h4>
+              <p data-i18n="imm.r2_p">Practical advice on getting your qualifications recognized abroad.</p>
+            </a>
+            <a href="#" class="resource-link">
+              <span class="resource-type" data-i18n="imm.r3_ty">Story</span>
+              <h4 data-i18n="imm.r3_t">Finding Home in a New City</h4>
+              <p data-i18n="imm.r3_p">How I built community, found mentors, and made Istanbul feel like home.</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Collaboration -->
+    <section class="section" id="collaboration">
+      <div class="container">
+        <header class="section-header">
+          <p class="eyebrow" data-i18n="collab.eyebrow">Collaborate</p>
+          <h2 data-i18n="collab.title">Let's Create Something Together</h2>
+          <p class="section-subtitle" data-i18n="collab.subtitle">
+            I work with brands that value authenticity, aesthetics, and meaningful storytelling.
+          </p>
+          <p class="section-subtitle" data-i18n="collab.intro" style="margin-top:12px">
+            I create high-quality, story-driven content that blends lifestyle, professionalism, and visual identity — helping brands connect with audiences in a natural and impactful way.
+          </p>
+        </header>
+
+        <div class="collab-stats stagger">
+          <div class="collab-stat">
+            <span class="collab-stat-val">110K+</span>
+            <span class="collab-stat-lbl" data-i18n="collab.s1">Total Followers</span>
+          </div>
+          <div class="collab-stat">
+            <span class="collab-stat-val">4.8%</span>
+            <span class="collab-stat-lbl" data-i18n="collab.s2">Avg. Engagement</span>
+          </div>
+          <div class="collab-stat">
+            <span class="collab-stat-val">17–35</span>
+            <span class="collab-stat-lbl" data-i18n="collab.s3">Core Age Range</span>
+          </div>
+          <div class="collab-stat">
+            <span class="collab-stat-val">12+</span>
+            <span class="collab-stat-lbl" data-i18n="collab.s4">Countries Reached</span>
+          </div>
+        </div>
+
+        <div class="collab-content">
+          <div class="collab-audience">
+            <h3 class="sub-heading" data-i18n="collab.aud">Audience</h3>
+            <ul>
+              <li data-i18n="collab.aud1">Young professionals (17–35) interested in lifestyle, fashion, and growth</li>
+              <li data-i18n="collab.aud2">Iranian audience in Turkey and frequent travelers</li>
+              <li data-i18n="collab.aud3">Wellness-focused, style-conscious individuals</li>
+              <li data-i18n="collab.aud4">Students and early-career professionals</li>
+            </ul>
+          </div>
+          <div class="collab-types">
+            <h3 class="sub-heading" data-i18n="collab.types">Partnership Types</h3>
+            <div class="type-list">
+              <div class="type-item">
+                <h4 data-i18n="collab.pt1_t">Content Creation</h4>
+                <p data-i18n="collab.pt1_p">High-quality Reels, photos, and UGC tailored to your brand.</p>
+              </div>
+              <div class="type-item">
+                <h4 data-i18n="collab.pt2_t">Brand Integration</h4>
+                <p data-i18n="collab.pt2_p">Natural placement within real lifestyle storytelling.</p>
+              </div>
+              <div class="type-item">
+                <h4 data-i18n="collab.pt3_t">Ambassadorship</h4>
+                <p data-i18n="collab.pt3_p">Long-term partnerships built on trust and alignment.</p>
+              </div>
+              <div class="type-item">
+                <h4 data-i18n="collab.pt4_t">Creative Campaigns</h4>
+                <p data-i18n="collab.pt4_p">Concept-driven content for launches and brand positioning.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="collab-offer">
+          <h3 class="sub-heading" data-i18n="collab.offer">What I Offer Brands</h3>
+          <div class="collab-audience">
+            <ul>
+              <li data-i18n="collab.off1">Cinematic lifestyle Reels</li>
+              <li data-i18n="collab.off2">UGC content for ads</li>
+              <li data-i18n="collab.off3">Aesthetic photography</li>
+              <li data-i18n="collab.off4">Story-driven product integration</li>
+              <li data-i18n="collab.off5">Access to a niche engaged audience</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="collab-logos-section">
+          <h3 class="sub-heading" data-i18n="collab.past">Past Collaborations</h3>
+          <div class="collab-logos">
+            <div class="logo-slot"><span>Brand A</span></div>
+            <div class="logo-slot"><span>Brand B</span></div>
+            <div class="logo-slot"><span>Brand C</span></div>
+            <div class="logo-slot"><span>Brand D</span></div>
+            <div class="logo-slot"><span>Brand E</span></div>
+            <div class="logo-slot"><span>Brand F</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <header class="section-header">
+          <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
+          <h2 data-i18n="contact.title">Get in Touch</h2>
+          <p class="section-subtitle" data-i18n="contact.subtitle">
+            Whether it's a collaboration, a question, or just a hello —
+            I'd love to hear from you.
+          </p>
+        </header>
+
+        <div class="contact-grid">
+          <form class="contact-form" id="contact-form" action="#" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-name" data-i18n="contact.lbl_name">Name</label>
+                <input type="text" id="contact-name" name="name" placeholder="Your full name" data-i18n-ph="contact.ph_name" required>
+              </div>
+              <div class="form-group">
+                <label for="contact-email" data-i18n="contact.lbl_email">Email</label>
+                <input type="email" id="contact-email" name="email" placeholder="you@example.com" data-i18n-ph="contact.ph_email" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="contact-subject" data-i18n="contact.lbl_subject">Subject</label>
+              <select id="contact-subject" name="subject">
+                <option value="general" data-i18n="contact.opt_general">General Inquiry</option>
+                <option value="collaboration" data-i18n="contact.opt_collab">Collaboration</option>
+                <option value="dentistry" data-i18n="contact.opt_dentistry">Dental Inquiry</option>
+                <option value="speaking" data-i18n="contact.opt_speaking">Speaking & Events</option>
+                <option value="other" data-i18n="contact.opt_other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="contact-message" data-i18n="contact.lbl_message">Message</label>
+              <textarea id="contact-message" name="message" rows="5" placeholder="Tell me what's on your mind..." data-i18n-ph="contact.ph_msg" required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary" data-i18n="contact.submit">Send Message</button>
+            <p class="form-note" data-i18n="contact.note">Layout preview — connect to Formspree or Netlify Forms to activate.</p>
+          </form>
+
+          <aside class="contact-aside">
+            <div class="contact-block">
+              <h3 data-i18n="contact.direct">Direct Contact</h3>
+              <a href="mailto:dr.amseinn@gmail.com" class="email-link">dr.amseinn@gmail.com</a>
+            </div>
+            <div class="contact-block">
+              <h3 data-i18n="contact.follow">Follow Along</h3>
+              <div class="social-links">
+                <a href="#" class="social-link" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+                <a href="#" class="social-link" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48"/></svg></a>
+                <a href="#" class="social-link" aria-label="TikTok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg></a>
+                <a href="#" class="social-link" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+                <a href="#" class="social-link" aria-label="X"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+              </div>
+            </div>
+            <div class="contact-block">
+              <h3 data-i18n="contact.location">Location</h3>
+              <p data-i18n-html="contact.loc_text">Based in Istanbul, Turkey<br>Available worldwide for collaborations</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-wordmark">Amsein</div>
+      <div class="footer-inner">
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="#about" data-i18n="nav.about">About</a>
+          <a href="#dentistry" data-i18n="nav.dentistry">Dentistry</a>
+          <a href="#lifestyle" data-i18n="nav.lifestyle">Lifestyle</a>
+          <a href="#immigration" data-i18n="nav.immigration">Immigration</a>
+          <a href="#collaboration" data-i18n="nav.collaborate">Collaborate</a>
+          <a href="#contact" data-i18n="nav.contact">Contact</a>
+        </nav>
+        <p class="footer-copy" data-i18n-html="footer.copy">&copy; 2026 Amsein. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
