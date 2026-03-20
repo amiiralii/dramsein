@@ -188,10 +188,26 @@
       var lang = document.documentElement.lang || 'en';
       var t = T[lang] || {};
       var originalText = t['contact.submit'] || 'Send Message';
-      btn.textContent = t['contact.sent'] || 'Sent!';
+      btn.textContent = t['contact.sending'] || 'Sending…';
       btn.disabled = true;
       btn.style.opacity = '0.6';
-      setTimeout(function () { btn.textContent = originalText; btn.disabled = false; btn.style.opacity = '1'; form.reset(); }, 2000);
+
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      }).then(function (res) {
+        if (res.ok) {
+          btn.textContent = t['contact.sent'] || 'Sent!';
+          form.reset();
+        } else {
+          btn.textContent = t['contact.error'] || 'Error — try again';
+        }
+      }).catch(function () {
+        btn.textContent = t['contact.error'] || 'Error — try again';
+      }).finally(function () {
+        setTimeout(function () { btn.textContent = originalText; btn.disabled = false; btn.style.opacity = '1'; }, 2000);
+      });
     });
   }
 
